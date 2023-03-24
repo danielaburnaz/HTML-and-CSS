@@ -1,0 +1,125 @@
+/* :root {
+    --avatar-size: 100px
+} */
+
+/*welcome part*/
+
+.welcome {
+    height: 50vh;
+    background-color: var(--bg-primary);
+}
+
+.welcome .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome h1 {
+    color: var(--text-white);
+    text-align: center;
+}
+
+/*grid*/
+
+
+
+.trainers .container .grid {
+    padding: var(--spacing-large);
+}
+
+.trainers .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: var(--spacing-large);
+}
+
+.trainers .trainer-wrapper {
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 4);
+    padding-bottom: var(--spacing-medium);
+    width: 25%;
+}
+
+.trainers .trainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: var(--spacing-medium);
+
+    width: 100%;
+    min-height: 350px;
+    margin-top: calc(2 * var(--spacing-xl));
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: var(--spacing-small);
+    margin-left: var(--spacing-small);
+
+}
+
+.trainers .image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* position: relative; */
+    padding-bottom: var(--spacing-medium);
+    filter: grayscale(100%);
+    margin-top: -70px;
+    z-index: 1;
+}
+
+
+.trainers .p {
+    font-size: var(--fs-medium);
+}
+
+.trainers img {
+    width: 100%;
+    height: auto;
+}
+
+.trainers h3 {
+    width: 100%;
+    text-align:center;
+    font-weight: 400;
+    font-size: var(--fs-large);
+
+    background-color: var(--bg-primary);
+    
+    border-radius: 5px;
+    padding: var(--spacing-tiny);
+    margin-bottom: var(--spacing-medium);
+    margin-top: -25px;
+    z-index: 3;
+}
+
+/* 
+.trainers .trainer {
+    justify-content: center;
+} */
+
+@media (max-width: 992px) {
+    .trainers .trainer-wrapper {
+        width: calc(100% / 3)
+    }
+}
+
+@media (max-width: 768px){
+    .trainers .trainer-wrapper {
+        display: flex;
+        justify-content: center;
+        padding-bottom: var(--spacing-medium);
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px){
+    .trainers .trainer-wrapper{
+        width: 70%;
+    }
+}
